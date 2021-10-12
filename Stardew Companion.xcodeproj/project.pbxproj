@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		992B98212715E97B0085DEDF /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B98202715E97B0085DEDF /* FileController.swift */; };
 		99EC9D522715DEC900717717 /* Stardew_CompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC9D512715DEC900717717 /* Stardew_CompanionApp.swift */; };
 		99EC9D542715DEC900717717 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC9D532715DEC900717717 /* ContentView.swift */; };
 		99EC9D562715DECC00717717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99EC9D552715DECC00717717 /* Assets.xcassets */; };
 		99EC9D592715DECC00717717 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99EC9D582715DECC00717717 /* Preview Assets.xcassets */; };
 		99EC9D612715DEFF00717717 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 99EC9D602715DEFF00717717 /* SWXMLHash */; };
 		99EC9D632715DF6200717717 /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC9D622715DF6200717717 /* Books.swift */; };
+		99EC9D652715E28000717717 /* ExampleSaveFile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 99EC9D642715E28000717717 /* ExampleSaveFile.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		992B98202715E97B0085DEDF /* FileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
 		99EC9D4E2715DEC900717717 /* Stardew Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stardew Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99EC9D512715DEC900717717 /* Stardew_CompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stardew_CompanionApp.swift; sourceTree = "<group>"; };
 		99EC9D532715DEC900717717 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		99EC9D552715DECC00717717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99EC9D582715DECC00717717 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		99EC9D622715DF6200717717 /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
+		99EC9D642715E28000717717 /* ExampleSaveFile.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ExampleSaveFile.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				99EC9D552715DECC00717717 /* Assets.xcassets */,
 				99EC9D572715DECC00717717 /* Preview Content */,
 				99EC9D622715DF6200717717 /* Books.swift */,
+				99EC9D642715E28000717717 /* ExampleSaveFile.xml */,
+				992B98202715E97B0085DEDF /* FileController.swift */,
 			);
 			path = "Stardew Companion";
 			sourceTree = "<group>";
@@ -137,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99EC9D592715DECC00717717 /* Preview Assets.xcassets in Resources */,
+				99EC9D652715E28000717717 /* ExampleSaveFile.xml in Resources */,
 				99EC9D562715DECC00717717 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +158,7 @@
 				99EC9D632715DF6200717717 /* Books.swift in Sources */,
 				99EC9D542715DEC900717717 /* ContentView.swift in Sources */,
 				99EC9D522715DEC900717717 /* Stardew_CompanionApp.swift in Sources */,
+				992B98212715E97B0085DEDF /* FileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

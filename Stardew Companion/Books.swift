@@ -8,31 +8,31 @@
 import Foundation
 import SWXMLHash
 
-let xmlWithNamespace = """
-<root xmlns:h=\"http://www.w3.org/TR/html4/\"
-xmlns:f=\"http://www.w3schools.com/furniture\">
-  <h:table>
-    <h:tr>
-      <h:td>Apples</h:td>
-      <h:td>Bananas</h:td>
-    </h:tr>
-  </h:table>
-  <f:table>
-    <f:name>African Coffee Table</f:name>
-    <f:width>80</f:width>
-    <f:length>120</f:length>
-  </f:table>
-</root>
-"""
+let xmlWithNamespace = readLocalFile(forName: "ExampleSaveFile")
+//let xmlWithNamespace = """
+//<root xmlns:h=\"http://www.w3.org/TR/html4/\"
+//xmlns:f=\"http://www.w3schools.com/furniture\">
+//  <h:table>
+//    <h:tr>
+//      <h:td>Apples</h:td>
+//      <h:td>Bananas</h:td>
+//    </h:tr>
+//  </h:table>
+//  <f:table>
+//    <f:name>African Coffee Table</f:name>
+//    <f:width>80</f:width>
+//    <f:length>120</f:length>
+//  </f:table>
+//</root>
+//"""
 
-var xml = XMLHash.parse(xmlWithNamespace)
+var xml = XMLHash.parse(xmlWithNamespace!)
 
 // one root element
 let count = xml["root"].all.count
 
-func getText() -> String {
-    // "Apples"
-    xml["root"]["h:table"]["h:tr"]["h:td"][0].element!.text
+func getPlayerName() -> String {
+    xml["SaveGame"]["player"]["name"].element!.text
 }
 
 // enumerate all child elements (procedurally)
