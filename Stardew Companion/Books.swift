@@ -89,6 +89,17 @@ func getFarmType() -> String {
     return farmTypes[Int(xml["SaveGame"]["whichFarm"].element!.text)!]
 }
 
+private func packColor(r: Int, g: Int, b: Int, a: Int) -> Int {
+    0 | (a & 255) << 24 | (b & 255) << 16 | (g & 255) << 8 | (r & 255)
+}
+
+//private func unpackColor(_ packedColor: Int) -> nil {
+//    let a = (color >> 24) & 255
+//    let b = (color >> 16) & 255
+//    let g = (color >> 8) & 255
+//    let r = color & 255
+//}
+
 // ["questLog"]["Quest"]
 // <_currentObjective>Build a Coop.</_currentObjective><_questDescription>Robin, the local carpenter, lives north of town. In exchange for raw materials and money, she'll construct new buildings on your farm. You'll need her to build a coop or barn so that you can raise animals.</_questDescription><_questTitle>Raising Animals</_questTitle><rewardDescription>-1</rewardDescription><completionString>Coop</completionString><accepted>false</accepted><completed>true</completed><dailyQuest>false</dailyQuest><showNew>false</showNew><canBeCancelled>false</canBeCancelled><destroy>false</destroy><id>7</id><moneyReward>100</moneyReward><questType>8</questType><daysLeft>0</daysLeft><nextQuests><int>-1</int></nextQuests><questTitle>Raising Animals</questTitle>
 
