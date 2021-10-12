@@ -10,7 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text(getPlayerName())
-            .padding()
+        Text(getFarmName())
+        Text(getFarmType())
+        Text(getMoney())
+        Text(getTimeOfYear())
+        Text(getformattedTimePlayed())
     }
 }
 
