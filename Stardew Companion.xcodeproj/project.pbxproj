@@ -11,6 +11,8 @@
 		99EC9D542715DEC900717717 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC9D532715DEC900717717 /* ContentView.swift */; };
 		99EC9D562715DECC00717717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99EC9D552715DECC00717717 /* Assets.xcassets */; };
 		99EC9D592715DECC00717717 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99EC9D582715DECC00717717 /* Preview Assets.xcassets */; };
+		99EC9D612715DEFF00717717 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 99EC9D602715DEFF00717717 /* SWXMLHash */; };
+		99EC9D632715DF6200717717 /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC9D622715DF6200717717 /* Books.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		99EC9D532715DEC900717717 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		99EC9D552715DECC00717717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99EC9D582715DECC00717717 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		99EC9D622715DF6200717717 /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99EC9D612715DEFF00717717 /* SWXMLHash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 				99EC9D532715DEC900717717 /* ContentView.swift */,
 				99EC9D552715DECC00717717 /* Assets.xcassets */,
 				99EC9D572715DECC00717717 /* Preview Content */,
+				99EC9D622715DF6200717717 /* Books.swift */,
 			);
 			path = "Stardew Companion";
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "Stardew Companion";
+			packageProductDependencies = (
+				99EC9D602715DEFF00717717 /* SWXMLHash */,
+			);
 			productName = "Stardew Companion";
 			productReference = 99EC9D4E2715DEC900717717 /* Stardew Companion.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 99EC9D452715DEC900717717;
+			packageReferences = (
+				99EC9D5F2715DEFF00717717 /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+			);
 			productRefGroup = 99EC9D4F2715DEC900717717 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99EC9D632715DF6200717717 /* Books.swift in Sources */,
 				99EC9D542715DEC900717717 /* ContentView.swift in Sources */,
 				99EC9D522715DEC900717717 /* Stardew_CompanionApp.swift in Sources */,
 			);
@@ -343,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99EC9D5F2715DEFF00717717 /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99EC9D602715DEFF00717717 /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99EC9D5F2715DEFF00717717 /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99EC9D462715DEC900717717 /* Project object */;
 }
