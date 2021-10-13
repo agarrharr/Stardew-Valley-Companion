@@ -1,10 +1,3 @@
-//
-//  Books.swift
-//  Stardew Companion
-//
-//  Created by Adam Garrett-Harris on 10/12/21.
-//
-
 import Foundation
 import SWXMLHash
 
@@ -87,6 +80,10 @@ func getFarmType() -> String {
     let farmTypes = ["Standard farm", "River farm", "Forest farm", "Hill-top farm", "Wilderness farm"]
 
     return farmTypes[Int(xml["SaveGame"]["whichFarm"].element!.text)!]
+}
+
+func getPlayerLocation() -> (Int, Int) {
+    return (Int(xml["SaveGame"]["player"]["Position"]["X"].element!.text)!, Int(xml["SaveGame"]["player"]["Position"]["Y"].element!.text)!)
 }
 
 private func packColor(r: Int, g: Int, b: Int, a: Int) -> Int {

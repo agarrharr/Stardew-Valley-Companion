@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    let (x, y) = getPlayerLocation()
     var body: some View {
-        Text(getPlayerName())
-        Text(getFarmName())
-        Text(getFarmType())
-        Text(getMoney())
-        Text(getTimeOfYear())
-        Text(getformattedTimePlayed())
+        VStack {
+            Text(getPlayerName())
+            Text(getFarmName())
+            Text(getFarmType())
+            Text(getMoney())
+            Text(getTimeOfYear())
+            Text(getformattedTimePlayed())
+            Text("(\(x), \(y))")
+        }
     }
 }
 
